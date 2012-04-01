@@ -1,0 +1,145 @@
+\documentclass[10pt]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{soul}
+\usepackage[top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+
+\begin{document}
+\noindent
+package1.souspackage2.souspackage3\\ 
+\part*{\bfseries VecteurDeDouble}
+\noindent
+Author: TELECOM BRETAGNE\\
+Version: 1.2\\
+\\
+\noindent
+\begin{tabular}{|p{3cm}|p{12cm}|}
+\hline
+\multicolumn{2}{|l|}{\bfseries {Field Summary}} \\
+\hline
+private int[ ] &  \bfseries \ul{elements} \tabularnewline
+  & {\ \ \ \ contient la valeur des \'el\'emnets du "VecteurDeDouble"}\\
+\hline
+private boolean[ ] &  \bfseries \ul{setsRealises} \\
+  & {\ \ \ \ setsRealises[i]=true si l'element correspond du "VecteurDeDouble" a \'et\'e affect\'e (flase sinon)}\\
+\hline
+\end{tabular}
+\\
+\\
+\\
+\begin{tabular}{|p{15.4cm}|}
+\hline
+{\bfseries Constructor Summary}\\
+\hline
+{\bfseries \ \ \ul{VecteurDeDouble}} (\textit{int taille}) \\
+\noindent
+ \ \ \ \ \ Construit un "VecteurDeDouble" de taille \'el\'elements, non affect\'es. R\'ealise les instanciations et initialisations n\'ecessaires. \\
+\hline
+\end{tabular}
+\\
+\\
+\\
+\begin{tabular}{|p{3cm}|p{12cm}|}
+\hline
+\multicolumn{2}{|l|}{\bfseries Method Summary}\\
+\hline
+int & {\bfseries \ul{nbElements} }(\textit{})\tabularnewline
+
+  & {\ \ \ \ Renvoie le nombre d'\'el\'ements du "VecteurDeDouble".}\\
+\hline
+void & {\bfseries \ul{setelement} }(\textit{ int indice, double valeur})\tabularnewline
+
+  & { \ \ \ \ L'\'el\'ements  d'indice indice du "VecteurDeDouble" est affich\'e du double valeur pass\'e en param\`etre. Effectue, si n\'ecessaire, un agrandissement des tableaux elements et setsRealises, ainsi que leurs mises \`a jour.}\\
+\hline
+\end{tabular}
+\\
+\\
+\\
+\begin{tabular}{|p{15.4cm}|}
+\hline
+\Large{Field Summary Detail}\\
+\hline
+\end{tabular}
+\\
+\\
+\begin{tabular}{p{1cm} l}
+\multicolumn{2}{l}{private int[ ]  {\bfseries {elements}}}\\
+& contient la valeur des \'el\'emnets du "VecteurDeDouble".
+\end{tabular}
+\\
+\rule{\linewidth}{.4pt}
+\\
+\\
+\begin{tabular}{p{1cm} l}
+\multicolumn{2}{l}{private boolean[ ] {\bfseries {setsRealises}}}\\
+& setsRealises[i]=true si l'element correspond du "VecteurDeDouble" a \'et\'e affect\'e (flase sinon).
+\end{tabular}
+\\
+\\
+\\
+\begin{tabular}{|p{15.4cm}|}
+\hline
+\Large{Constructor Detail}\\
+\hline
+\end{tabular}
+\\
+\\
+\begin{tabular}{p{1cm} p{1cm} l}
+\multicolumn{3}{l}{{\bfseries VecteurDeDouble} (\textit{int taille})}\\
+\\
+& \multicolumn{2}{l}{Construit un "VecteurDeDouble" de taille \'el\'elements.}\\
+\\
+& \multicolumn{2}{l}{\textbf{Paramètres:}}\\
+&&\texttt{variable} - Utilisation de la variable\\
+& \multicolumn{2}{l}{\textbf{Returns:}}\\
+&& Aucun retour \\
+& \multicolumn{2}{l}{\textbf{Throws:}}\\
+&&\texttt{NomException} - Explication de l'exception\\
+\end{tabular}
+\\
+\\
+\\
+\noindent
+\begin{tabular}{|p{15.4cm}|}
+\hline
+\Large{Method Detail}\\
+\hline
+\end{tabular}
+\\
+\\
+\\
+\noindent
+\begin{tabular}{p{1cm} p{1cm} l}
+\multicolumn{3}{l}{int {\bfseries nbElements} ()}\\
+\\
+& \multicolumn{2}{l}{Renvoie le nombre d'\'el\'ements du "VecteurDeDouble".}\\
+\\
+& \multicolumn{2}{l}{\textbf{Paramètres:}}\\
+&&\texttt{compteur} - pour parcourir le tableau\\
+& \multicolumn{2}{l}{\textbf{Returns:}}\\
+&& le nombre d'éléments du "VecteurDuDouble"\\
+& \multicolumn{2}{l}{\textbf{Throws:}}\\
+&&\texttt{NomException} - Explication de l'exception\\
+\end{tabular}
+\\
+\rule{\linewidth}{.4pt}
+\\
+\\
+\\
+\begin{tabular}{p{1cm} p{1cm} l}
+\multicolumn{3}{l}{void {\bfseries {setelement} }(\textit{ int indice, double valeur})}\\
+\\
+& \multicolumn{2}{l}{Affiche L'\'el\'ements  d'indice indice du "VecteurDeDouble".}\\
+\\
+& \multicolumn{2}{l}{\textbf{Paramètres:}}\\
+&&\texttt{variable} - Utilisation de la variable\\
+& \multicolumn{2}{l}{\textbf{Returns:}}\\
+&& Aucun retour \\
+& \multicolumn{2}{l}{\textbf{Throws:}}\\
+&&\texttt{NomException} - Explication de l'exception\\
+\end{tabular}
+
+
+\end{document}

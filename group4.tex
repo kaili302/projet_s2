@@ -1,0 +1,79 @@
+\documentclass[10pt]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{soul}
+\usepackage[top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+\begin{document}
+\noindent
+\huge{\textbf{Classes Summary}}\\
+\LARGE{\textbf{fr.dworkin.sdz.javadoc.Zero}}\\
+\newpage
+\LARGE{\textbf{fr.dworkin.sdz.javadoc.Zero}}\\
+ Zero est la classe représentant un membre du Site du Zéro.
+ 
+ Un membre du SDZ est caractérisé par les informations suivantes :
+ Un identifiant unique attribué définitivement.
+ Un pseudo, suceptible d'être changé.
+ Un "level". Il peut être "zéro", newser, validateur, modérateur, etc.
+ De plus, un Zéro a une liste d'amis Zéro. Le membre pourra ajouter ou enlever
+ des amis à cette liste.
+ 
+ @see SDZLevel
+ 
+ @author dworkin
+ @version 3.0
+\\
+\noindent
+\huge{\textbf{Fields Summary}}\\
+\\\textbf{id}\\
+int\\
+L'ID du Zéro. Cet ID n'est pas modifiable.\\
+\\\textbf{pseudo}\\
+java.lang.String\\
+Le pseudo du Zéro. Ce pseudo est changeable.\\
+\\\textbf{level}\\
+SDZLevel\\
+Le "level" du Zéro. Ce "level" peut être modifié.
+ Pour de plus amples informations sur les "levels" possibles, regardez la
+ documentation de la classe SDZLevel.\\
+\\\textbf{listeAmis}\\
+java.util.List\\
+La liste des amis du Zéro.
+ Il est possible d'ajouter ou de retirer des amis dans cette liste.\\
+\textbf{Zero}\\
+Sa signature est \textbf{(int, String)}\\
+Constructeur Zero.
+ A la construction d'un objet Zéro, le "level" est fixé à SDZLevel.ZERO, ce qui
+ correspond au niveau d'un membre. De plus la liste des amis est créée vide.\\
+parametre: id - L'identifiant unique du Zéro.\\
+parametre: pseudo - Le pseudo du Zéro.\\
+\textbf{void ajouterAmi}\\
+Sa signature est \textbf{(Zero)}\\
+Ajoute un Zero à la liste des amis.\\
+parametre: ami - Le nouvel ami du Zéro.\\
+\textbf{void retirerAmi}\\
+Sa signature est \textbf{(Zero)}\\
+Retire un Zero à la liste des amis.\\
+parametre: ancienAmi - Un ancien ami du Zéro.\\
+\textbf{int getId}\\
+Retourne l'ID du zéro.\\
+\textbf{java.lang.String getPseudo}\\
+Retourne le pseudo du zéro.\\
+\textbf{SDZLevel getLevel}\\
+Retourne le level du zéro.\\
+\textbf{void setLevel}\\
+Sa signature est \textbf{(SDZLevel)}\\
+Met à jour le niveau du membre.\\
+parametre: level - Le nouveau level du membre.\\
+\textbf{void setPseudo}\\
+Sa signature est \textbf{(String)}\\
+Met à jour le pseudo du membre.\\
+parametre: pseudo - Le nouveau pseudo du membre.\\
+\textbf{java.util.List getListeAmis}\\
+Retourne la liste des amis du zéro.\\
+\textbf{java.util.Vector getVectorAmis}\\
+Retourne la liste des amis du zéro.\\
+\textbf{java.net.URL getURLProfil}\\
+Retourne l'adresse du profil du Zero.\\
+\end{document}
